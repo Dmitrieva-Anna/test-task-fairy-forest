@@ -1,0 +1,10 @@
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 425px 0 350px;
+
+    &__page {
+        width: 716px;
+    }
+}

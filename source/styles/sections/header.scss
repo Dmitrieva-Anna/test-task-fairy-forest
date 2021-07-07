@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  max-width: 1920px;
+  min-height: 828px;
+  margin-bottom: 56px;
+
+  &__navigation {
+    width: 350px;
+    background: url(../../img/greenBackground.jpg) no-repeat;
+    padding: 28px 63px 89px 64px;
+  }
+  &__title {
+    background: url(../../img/deer.jpg) no-repeat;
+    flex-grow: 1;
+    // width: 1920px;
+    background-color: rgb(63,93,69);
+    background-size: cover;
+    background-position: right;
+    background-origin: border-box;
+  }
+
+  nav {
+    margin:0 44px 30px 90px;
+  }
+
+  &__title {
+   
+    &-info {
+      position: relative;
+      top: 400px;
+      left: 82px;
+      font-family: Cera Pro;
+      font-size: 60px;
+      line-height: 75px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #E3CEA3;
+
+
+    }
+  }
+}
