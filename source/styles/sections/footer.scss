@@ -1,10 +1,45 @@
-.info {
+.ft {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 425px 0 350px;
+    padding: 0 425px 37px 350px;
 
     &__page {
-        width: 716px;
+        p {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #000000;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        width: 40%;
+
+        button {
+            height: 50px;
+            width: 179px;
+            background-color: #e3cea3;
+            border: 0;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 15px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: #2d2d2d;
+
+            &:hover {
+                background-color: #e0c388;
+            }
+        }
     }
 }
