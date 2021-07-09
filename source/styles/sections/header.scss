@@ -8,95 +8,91 @@
   background-position: center;
   background-origin: border-box;
 
-  button {
-    height: 50px;
-    width: 179px;
-    background-color: #e3cea3;
-    margin: 9px 81px 89px 90px;
-    border: 0;
-    cursor: pointer;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #2b2b2b;
-
-    &:hover {
-      background-color: #e0c388;
-    }
+  &__navigation-logo {
+    margin-bottom: 57px;
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
   }
 
   &__navigation {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
     width: 350px;
     background: url(../../img/greenBackground.png) no-repeat;
     background-size: 100% 100%;
     opacity: 0.9;
 
-    &-logo {
-      padding: 28px 63px 57px 64px;
-    }
+    // &-logo {
+    //   // padding: 28px 63px 57px 64px;
+    //   margin-bottom: 57px;
+    // }
 
     &-tel {
       margin-top: 29px;
+
       span {
         color: #e3cea3;
       }
     }
   }
 
-  &__title {
-    &-text {
-      margin-bottom: 14px;
-    }
+  &__title-text {
+    margin-bottom: 14px;
+  }
 
-    &-info {
-      position: relative;
-      top: 442px;
-      left: 82px;
+  &__title-info {
+    position: relative;
+    top: 442px;
+    left: 82px;
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #e3cea3;
+
+    .first-item {
+      font-weight: bold;
       font-size: 60px;
       line-height: 75px;
       letter-spacing: 0px;
       text-align: left;
       color: #e3cea3;
+    }
 
-      .first-item {
-        font-weight: bold;
-        font-size: 60px;
-        line-height: 75px;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #e3cea3;
-      }
+    .second-item {
+      font-size: 44px;
+      line-height: 41px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #ffffff;
+    }
 
-      .second-item {
-        font-size: 44px;
-        line-height: 41px;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #ffffff;
-      }
+    .third-item {
+      font-size: 60px;
+      font-weight: bold;
+      line-height: 75px;
+      letter-spacing: 0px;
+      text-align: left;
+      line-height: 44px;
+      color: #ffffff;
+    }
 
-      .third-item {
-        font-size: 60px;
-        font-weight: bold;
-        line-height: 75px;
-        letter-spacing: 0px;
-        text-align: left;
-        line-height: 44px;
-        color: #ffffff;
-      }
-
-      .fourth-item {
-        font-size: 44px;
-        line-height: 41px;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #ffffff;
-      }
+    .fourth-item {
+      font-size: 44px;
+      line-height: 41px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #ffffff;
     }
   }
 
   nav {
     margin: 0 44px 30px 90px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 
     ul {
       margin-bottom: 30px;
@@ -104,31 +100,86 @@
       span {
         margin-right: 10px;
       }
+
+      li {
+        display: flex;
+        margin-bottom: 20px;
+        color: #9fc460;
+        cursor: pointer;
+
+        span {
+          margin-left: 10px;
+
+          &:hover {
+            color: #c8daa9;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: #e3cea3;
+
+          &:hover {
+            color: #ebdec4;
+          }
+        }
+      }
     }
 
-    li {
-      display: flex;
-      margin-bottom: 8px;
-      color: #9fc460;
+    button {
+      height: 50px;
+      width: 179px;
+      background-color: #e3cea3;
+      border: 0;
       cursor: pointer;
-      margin-bottom: 25px;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: #2b2b2b;
+
+      &:hover {
+        background-color: #e0c388;
+      }
+    }
+  }
+
+  &__view {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+
+    div {
+      display: flex;
 
       span {
-        margin-left: 10px;
-
-        &:hover {
-          color: #c8daa9;
-        }
+        margin: 0 0 8px 10px;
+        display: flex;
+        color: #9fc460;
+        cursor: pointer;
       }
+    }
+  }
 
-      a {
-        text-decoration: none;
-        color: #e3cea3;
+  &__connect {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
 
-        &:hover {
-          color: #ebdec4;
-        }
-      }
+    p {
+      font-size: 22px;
+      line-height: 28px;
+      letter-spacing: 1px;
+      color: #e3cea3;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    span {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 1px;
+      color: #9fc460;
+      font-weight: bold;
     }
   }
 }
