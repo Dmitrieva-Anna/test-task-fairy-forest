@@ -1,8 +1,18 @@
+.container-ft {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f8f1e2;
+}
+
 .ft {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 425px 37px 350px;
+    height: 150px;
+    width: 1220px;
 
     &__page {
         p {
@@ -13,7 +23,6 @@
             line-height: 20px;
             letter-spacing: 0px;
             text-align: left;
-            color: #000000;
         }
     }
 
@@ -23,6 +32,7 @@
         align-items: center;
         cursor: pointer;
         width: 40%;
+        margin-right: 75px;
 
         button {
             height: 50px;

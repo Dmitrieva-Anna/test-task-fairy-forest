@@ -24,19 +24,12 @@ body {
 
 .content {
   margin: 0 auto;
-  max-width: 1920px;
-  width: 100%;
+  width: 1920px;
   height: 100%;
 }
 
-.main {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 .container {
-  width: 1220px;
+  max-width: 1220px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -72,8 +65,8 @@ body {
     }
 
     span {
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 18px;
+      line-height: 27px;
       letter-spacing: 0px;
       text-align: left;
       color: #9e7b56;
@@ -107,11 +100,7 @@ body {
 
     &-live {
       background-color: #0b351d;
-      background-size: cover;
-      background-position: center;
-      background-origin: border-box;
       width: 620px;
-      height: 395px;
       position: relative;
 
       img {
@@ -131,6 +120,7 @@ body {
       }
 
       p {
+        width: 347px;
         position: absolute;
         z-index: 1;
         font-size: 36px;
@@ -169,8 +159,9 @@ body {
 
 .collage {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 60px;
+  margin-bottom: 90px;
 
   &__item {
     display: grid;
@@ -179,16 +170,16 @@ body {
     background-position: center;
     text-align: center;
     align-content: flex-end;
-    justify-content: center;
+    justify-content: flex-start;
 
-    span {
-      font-size: 24px;
-      line-height: 30px;
+    p {
+      font-size: 22px;
+      line-height: 28px;
       letter-spacing: 0px;
       text-align: left;
       color: #ffffff;
       font-weight: bold;
-      margin-bottom: 35px;
+      margin: 0 0 35px 35px;
     }
   }
 
@@ -209,9 +200,10 @@ body {
 .data {
   font-weight: bold;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 240px;
   width: 100%;
+  padding: 0 20px;
 
   &__time {
     display: flex;
